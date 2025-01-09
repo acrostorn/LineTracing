@@ -45,10 +45,9 @@ function move(leftPower: number, rightPower: number) {
 }
 
 // エラー回復
-function recoverEmergency() {
+input.onButtonPressed(Button.A, function recoverEmergency() {
     let isEmergency = false
-}
-
+})
 // エラー処理
 function emergency() {
     let isEmergency = true
@@ -110,8 +109,8 @@ loops.everyInterval(timeInterval, function update() {
     
 })
 /** 
-Q
-・move method blockについて
-
+Q:
+    ・move method blockについて
+    ・recoveryボタンについて
 
  */

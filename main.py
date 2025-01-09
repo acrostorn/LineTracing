@@ -83,6 +83,7 @@ def move(leftPower: Float, rightPower: Float):
 #エラー回復
 def recoverEmergency():
     isEmergency = False
+input.on_button_pressed(Button.A, recoverEmergency)
 
 #エラー処理
 def emergency():
@@ -100,7 +101,7 @@ basic.forever(mainLoop)
 loops.every_interval(timeInterval, update)
 
 """
-Q
-・move method blockについて
-
+Q:
+    ・move method blockについて
+    ・recoveryボタンについて
 """
